@@ -35,12 +35,12 @@ INSERT INTO CourierServices (ServiceID, ServiceName, Cost)
 VALUES 
     (1, 'Standard', 10.00),
     (2, 'Express', 20.00),
-	(3, 'Priority Delivery', 30.00);
+    (3, 'Priority Delivery', 30.00);
 
 -- Create Courier Table
 CREATE TABLE Courier (
     CourierID INT PRIMARY KEY,
-	ServiceID INT,
+    ServiceID INT,
     SenderName VARCHAR(255),
     SenderAddress VARCHAR(255),
     ReceiverName VARCHAR(255),
@@ -54,8 +54,7 @@ CREATE TABLE Courier (
 
 ALTER TABLE Courier
 ADD UserID INT,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (ServiceID) REFERENCES CourierServices(ServiceID);
+    FOREIGN KEY (UserID) REFERENCES Users(UserID);
 
 UPDATE Courier SET UserID=1 WHERE CourierID=1; 
 UPDATE Courier SET UserID=2 WHERE CourierID=2; 
