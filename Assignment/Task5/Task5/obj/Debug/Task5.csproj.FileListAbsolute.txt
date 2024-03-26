@@ -1,2 +1,0 @@
-C:\Users\brind\source\repos\Task5\Task5\obj\Debug\Task5.csproj.AssemblyReference.cache
-C:\Users\brind\source\repos\Task5\Task5\obj\Debug\Task5.csproj.CoreCompileInputs.cache
